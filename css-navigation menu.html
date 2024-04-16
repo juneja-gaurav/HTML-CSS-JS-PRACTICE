@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Alegreya', serif;
+        }
+        .navbar{
+            background-color: greenyellow; 
+            /* background-color: palegreen; */
+            margin-top: -16px;
+            margin-left: -10px;
+            margin-right: -10px;
+            width: 101.4%;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .list{
+            float: left;
+            list-style: none;        
+        }
+        .link{
+            line-height: 60px;
+            font-size: 22px;
+            padding: 15px 15px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: black;
+        }
+        .list:hover{
+            background-color: rgb(120, 120, 255);
+            cursor:pointer;
+        }
+        .link:hover{
+            color: white;
+        }
+        .search{
+            float: right;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 5px 15px;
+            width: 200px;
+            margin-top: 5px;
+        }
+        #notes:hover{
+            background-color: black;
+            color: white;
+        }
+        #notes{
+        text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="list"><a class="link" href="#">Home</a></li>
+                <li class="list"><a class="link" href="#">About</a></li>
+                <li class="list"><a class="link" href="#">Services</a></li>
+                <li class="list"><a class="link" href="#">Contact us</a></li>
+
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <a id="notes" href="https://codewithharry.com/videos/web-development-in-hindi-23" target="_blank">Click here for Notes</a>
+</body>
+
+</html>

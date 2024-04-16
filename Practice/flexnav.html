@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Alegreya', serif;
+        }
+        .navbar{
+            background-color: rgb(120, 120, 255); 
+            display: flex;
+            /* flex-wrap: wrap;
+            flex-direction: row; (By default flex direction is Row)*/
+            flex-flow: row wrap; /* Shorthand for flex wrap & flex direction */
+            justify-content: center;
+        }
+        .link{
+            line-height: 60px;
+            font-size: 22px;
+            padding: 15px 15px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: white;
+        }
+        #search{
+            margin-left: 400px;
+            padding: 12px 75px;
+            border: 2px solid rgb(120, 120, 255);
+            border-radius: 15px;
+            padding: 7px 15px;
+            width: 200px;
+            margin-top: 15px;
+            color: rgb(120, 120, 255);
+        }
+        .list:hover{
+            background-color: rgb(120, 255, 120);
+            cursor:pointer;
+        }
+        .link:hover{
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+                <div class="list" id="list-1" ><a class="link" href="#">Home</a></div>
+                <div class="list" id="list-2" ><a class="link" href="#">About</a></div>
+                <div class="list" id="list-3" ><a class="link" href="#">Services</a></div>
+                <div class="list" id="list-4" ><a class="link" href="#">Contact us</a></div>
+                <div>
+                    <input type="text" name="search" id="search" placeholder="Search">
+                </div>
+            </nav>
+        </header>
+</body>
+
+</html>

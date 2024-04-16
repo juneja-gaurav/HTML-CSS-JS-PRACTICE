@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid </title>
+    <style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar' 
+        'section section section aside'
+        'footer footer footer footer ';
+    }
+    .item{
+        background-color: yellow;
+        border: 3px solid black;
+        padding: 12px 23px;
+    }
+    #navbar{
+        grid-area: navbar;
+    }
+    #section{
+        grid-area: section;
+    }
+    #aside{
+        grid-area: aside;
+    }
+   footer{
+        grid-area: footer;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatem rem voluptate error veniam sed eos similique nisi earum. Possimus libero a maxime ad repellat neque dignissimos officia tenetur molestias recusandae eius dolor, consequatur tempora, atque ab accusamus nihil cumque. Tenetur, saepe rerum nulla reprehenderit fugit et soluta, optio excepturi voluptatibus eos temporibus magnam quibusdam aut consequatur similique expedita, perspiciatis accusantium eveniet assumenda sequi! Maxime cumque ratione libero eos? Praesentium, velit! Error minus placeat ipsa ut natus facilis neque suscipit fugiat consequatur, dolor aperiam officiis. Nesciunt esse non, fugit deleniti, molestiae consequuntur mollitia veritatis laborum vitae ipsa officiis quibusdam error hic! Quia asperiores quis mollitia molestiae earum quae alias, perspiciatis consectetur adipisci maxime architecto possimus. Exercitationem aperiam eligendi libero harum, blanditiis ducimus vero quam, sed odit, voluptas eius quos eum iste perspiciatis repellat? Eius ex beatae, quaerat veniam, hic quisquam deleniti vitae ut expedita similique aliquid nesciunt praesentium blanditiis. A dolorum nobis, cupiditate beatae ipsum quasi sit delectus tenetur amet similique eum aperiam consectetur, tempore voluptas culpa aliquam dolor doloremque quas porro sequi, dolores quisquam at ducimus saepe? Velit nisi quisquam itaque accusamus ab consectetur ratione incidunt, enim at tempore ipsa labore suscipit soluta dolores dolorum deserunt? Rerum, ipsa inventore?
+        </div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur suscipit quod fugit asperiores debitis porro quis natus iure perspiciatis et? Voluptate odit eos laborum tenetur, quas nisi dicta adipisci temporibus aliquam aut maxime harum suscipit aperiam obcaecati sit reiciendis iste illum, quaerat, fugit neque quidem ab voluptates minima! Eos possimus commodi culpa labore quo explicabo, provident mollitia tempora aspernatur eum ducimus atque sequi! In, deleniti. Beatae, iusto quasi? Quas rem amet dolores maxime iusto doloribus iure labore tempora. Explicabo nesciunt et numquam architecto voluptate qui quidem ratione optio odio. Sit animi suscipit, harum repellendus quod nulla odit esse. Alias, obcaecati?
+        </div>
+        <footer class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident quo libero cumque.</footer>
+    </div>
+    <br><br>
+    <div>
+        <a href="https://codewithharry.com/videos/web-development-in-hindi-44" target="_blank">Click here for Notes</a>
+    </div>
+</body>
+</html>

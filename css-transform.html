@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Transform</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 100vh;
+            background-color: burlywood;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:mediumseagreen ;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 200px;
+            width: 200px;
+            transition: all 1.5s ease-in-out;
+        } 
+        .link{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            transition: all 1.5s ease-in-out;
+        }
+        .link:hover{
+            /* font-size: 26px; */
+            background-color: blueviolet;
+            color: white;
+    
+            transform: scale(2);
+        }
+        .box:hover{
+            font-size: 26px;
+            background-color: blueviolet;
+            color: white;
+
+            transform: rotate(360deg);
+            /* transform: skew(40deg); */
+            /* transform: scale(2); */
+            /* transform: translateX(123px); */
+            /* transform: translateY(123px); */
+            /* transform: translate(100px, 70px); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is a box</div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="link" href="https://codewithharry.com/videos/web-development-in-hindi-38/" target="_blank">Click here for Notes</a>
+    </div>
+</body>
+</html>

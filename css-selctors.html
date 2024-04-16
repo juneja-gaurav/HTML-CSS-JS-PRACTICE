@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        p{
+            color: purple;
+            border: 2px solid red;
+        }
+        
+        /* Id selector */
+        #firstPara{
+            color: green;
+        }
+
+        /* Class selector */
+        .bgBlue{
+            color: yellow;
+            background-color: blue;
+        }
+
+        /* Grouping selector */
+        footer, span{
+            color: brown;
+            background-color: pink; 
+        }
+    </style>
+</head>
+<body>
+    <a href="https://codewithharry.com/videos/web-development-in-hindi-15/" target="_blank">Click here for Notes</a>
+    <h3>CSS Selectors</h3>
+    <p id="firstPara">This is a simple paragraph to demonstrate css selectors</p>
+    <p id="secondPara" class="redElement bgBlue">This is a another simple paragraph to demonstrate css selectors</p>
+    <!-- We can make multiple classes by using space,we can also give same name to 2 or more than 2 classes but ID is given to only 1 and it's Unique... -->
+    <div>
+        <p>This is yet another simple paragraph inside div to demonstrate css selectors</p>
+        <!-- In above paragraph, styling is done by element selector... -->
+        <span>this is span</span>
+    </div>
+    <br>
+    <footer>This is footer</footer>
+</body>
+</html>

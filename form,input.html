@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body>
+    <a href="https://codewithharry.com/videos/web-development-in-hindi-8/" target="_blank">Click here for notes</a>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <!-- If we click on label then the writting box is automatically selected -->
+        <!-- id is must in input type if we use label -->
+        <label for="name">Name:</label>
+            <input type="text" name="myName" id="name">
+        <br><br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            <!-- Placeholder is use for pre written text in any box... -->
+            Email: <input type="email" name="myEmail" placeholder="Enter your Email">
+        </div>
+        <br>
+        <div>
+            Password: <input type="password" name="myPassword">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            <!-- Checked is for pre checked option -->
+            <label for="eligible"> Are you eligible ? </label>
+            <input type="checkbox" name="myEligibility" id="eligible">
+        </div>
+        <br>
+        <!-- In radio type... Name must be same -->
+        <div>
+            <fieldset>
+                <legend>Gender</legend>
+                Male <input type="radio" name="myGender" checked>
+                Female <input type="radio" name="myGender">
+                Other <input type="radio" name="myGender">
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            Upload Documents: <input type="file" name="file" id="file">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            Car: <select name="myCar" id="car"> 
+                <option value="">--Select a Car--</option>
+                <option value="ind">Indica</option>
+                <option value="swf">Swift</option>
+                <!-- Selected is for pre selected option -->
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+        <br>
+        <div>
+            <input type="image" name="img" id="img">
+        </div>
+    </form>
+</body>
+
+</html>

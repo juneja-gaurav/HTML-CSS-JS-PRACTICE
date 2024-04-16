@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positions in CSS</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3000px;
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid brown;
+            font-size: larger;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+    #box3{
+        /* CSS Position: static (default), relative, absolute, fixed, sticky */
+
+        /* 1. relative: Positions the element relative to its normal positon and will leave a gap at its normal position*/
+
+        /* position: relative; */
+        /* top: 30px;
+        left: 134px; */
+        
+        /* 2. absolute: Positions the element relative to the positon of its first parent*/
+
+        /* position: absolute; */
+        /* top: 40px;
+        left: 140-px; */
+
+        /* 3. fixed: Positions the element relative to the browser window */
+
+        /* position: fixed;
+        right: 4px;
+        bottom: 2px */
+
+        /* 4. sticky: Positions the element relative to the users scroll position */
+
+        position: sticky;
+        top: 3px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">I am with you...</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
